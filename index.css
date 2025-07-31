@@ -1,0 +1,77 @@
+/* Reset & Grundstil */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #8faa84;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-header {
+  background-image: url('banner.jpg'); /* Pfad zu deinem Bild */
+  background-position: center;
+  height: 230px;
+  position: relative;
+}
+
+
+
+
+/* Main */
+main {
+  flex: 1;
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Hero Section */
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.icon-button {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3));
+  cursor: pointer;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 4px;
+}
+
+.icon-button:hover {
+  transform: scale(1.2);
+}
+
+
+
+
+
+
+/* Footer */
+footer {
+  background-color: #f8f8f8;
+  font-weight: 600;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 1rem;
+  user-select: none;
+  color: #000;
+}
