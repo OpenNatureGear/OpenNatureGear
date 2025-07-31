@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Open Nature Gear</title>
   <style>
+    /* Grundstil */
     body {
       margin: 0;
       padding: 0;
-      background: #f8f8f8;
+      background: #ffffff;
       font-family: Arial, sans-serif;
       color: #222;
       display: flex;
@@ -18,28 +19,84 @@
       height: 100vh;
       text-align: center;
     }
+
+    /* Logo */
     img {
       max-width: 50%;
       height: auto;
       margin-bottom: 30px;
     }
+
+    /* Überschriften */
     h1 {
       font-size: 1.8rem;
       margin-bottom: 10px;
     }
+
     h2 {
       font-size: 1.2rem;
       font-weight: normal;
       color: #555;
+      margin-bottom: 30px;
     }
+
+    /* "Folge uns auf" Text */
+    .folge {
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    /* Farbhighlight */
     .highlight {
       color: #a6c800;
+    }
+
+    /* Link-Gruppe */
+    .link-gruppe {
+      margin-bottom: 40px;
+    }
+
+    /* Link-Stil */
+    .einfacher-link {
+      color: #0066cc;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: all 0.2s ease-in-out;
+      display: block;
+      margin: 8px 0;
+    }
+
+    .einfacher-link:hover {
+      color: #004999;
+      border-bottom: 1px solid #004999;
+    }
+
+    /* Responsive Anpassung für kleine Displays */
+    @media (max-width: 600px) {
+      img {
+        max-width: 80%;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      h2 {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
 <body>
   <img src="logo.png" alt="Open Nature Gear Logo">
+  
   <h1>Hier entsteht <span class="highlight">Open Nature Gear</span></h1>
   <h2>This is the future home of <span class="highlight">Open Nature Gear</span></h2>
+
+  <h2 class="folge">Folge uns auf</h2>
+  <div class="link-gruppe">
+    <a href="https://www.instagram.com/open_nature_gear/" class="einfacher-link" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.youtube.com/@OpenNatureGear" class="einfacher-link" target="_blank" rel="noopener">YouTube</a>
+  </div>
 </body>
 </html>
