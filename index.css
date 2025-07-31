@@ -14,14 +14,14 @@ body {
   flex-direction: column;
 }
 
-/* Banner/Header */
 .banner-header {
-  background-image: url('banner.jpg'); /* Bildpfad anpassen */
+  background-image: url('banner.jpg');
   background-position: center;
   background-size: cover;
-  height: 230px;
+  height: 30vh; /* 30% der Höhe des Bildschirms */
   position: relative;
 }
+
 
 /* Hauptinhalt */
 main {
@@ -98,7 +98,7 @@ footer {
   }
 
   .banner-header {
-    height: 150px;
+    height: 20vh;
   }
 
   footer {
