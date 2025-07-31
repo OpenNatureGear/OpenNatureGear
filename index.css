@@ -14,17 +14,16 @@ body {
   flex-direction: column;
 }
 
+/* Banner/Header */
 .banner-header {
-  background-image: url('banner.jpg'); /* Pfad zu deinem Bild */
+  background-image: url('banner.jpg'); /* Bildpfad anpassen */
   background-position: center;
+  background-size: cover;
   height: 230px;
   position: relative;
 }
 
-
-
-
-/* Main */
+/* Hauptinhalt */
 main {
   flex: 1;
   padding: 40px 20px;
@@ -33,7 +32,7 @@ main {
   text-align: center;
 }
 
-/* Hero Section */
+/* Hero */
 .hero h2 {
   font-size: 2.5rem;
   margin-bottom: 15px;
@@ -44,6 +43,15 @@ main {
   margin-bottom: 30px;
 }
 
+/* Social-Media-Icons */
+.link-gruppe {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
 .icon-button {
   width: 60px;
   height: 60px;
@@ -51,8 +59,6 @@ main {
   transition: transform 0.3s ease;
   filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3));
   cursor: pointer;
-  margin-left: 5px;
-  margin-right: 5px;
   border-radius: 4px;
 }
 
@@ -60,18 +66,43 @@ main {
   transform: scale(1.2);
 }
 
-
-
-
-
-
 /* Footer */
 footer {
-  background-color: #f8f8f8;
+  background-color: #000;
   font-weight: 600;
   padding: 15px 0;
   text-align: center;
   font-size: 1rem;
   user-select: none;
-  color: #000;
+  color: #fff;
+}
+
+/* Mobile-Optimierung */
+@media (max-width: 600px) {
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .icon-button {
+    width: 50px;
+    height: 50px;
+    margin: 8px;
+  }
+
+  main {
+    padding: 20px 10px;
+  }
+
+  .banner-header {
+    height: 150px;
+  }
+
+  footer {
+    font-size: 0.9rem;
+    padding: 10px 5px;
+  }
 }
